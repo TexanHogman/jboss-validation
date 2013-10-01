@@ -5,7 +5,7 @@
         <resource-root path="${project.build.finalName}.jar"/>
     </resources>
     <dependencies>
-            <module name="org.hogdev.play.bar" slot="0.1-SNAPSHOT" export="true" />
+            <module name="org.hogdev.play.bar" slot="0.1-SNAPSHOT" />
  	</dependencies>
 </module>
 
