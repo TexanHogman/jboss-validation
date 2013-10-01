@@ -1,0 +1,7 @@
+<jboss-deployment-structure>
+    <deployment>
+        <dependencies>
+            <module name="org.hogdev.play.foo" slot="0.1-SNAPSHOT" meta-inf="import" />
+        </dependencies>
+    </deployment>
+</jboss-deployment-structure>

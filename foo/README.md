@@ -1,0 +1,1 @@
+AuthServiceMock simulates a third party dependency that exposes a service via SPI 

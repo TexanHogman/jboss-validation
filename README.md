@@ -1,0 +1,1 @@
+A sample JEE6 web application that test how CDI works across JBoss module works 
