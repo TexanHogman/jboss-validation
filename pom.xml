@@ -30,10 +30,11 @@
 	</dependencies>
 
 	<properties>
+		<jboss.base.dir>D:/jboss/wildfly-8.0.0.Beta1-SNAPSHOT</jboss.base.dir>
 		<compileSource>1.7</compileSource>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jboss-module.srcdir>${project.basedir}/src/main/resources</jboss-module.srcdir>
-		<jboss-module.destdir>C:/temp/modules</jboss-module.destdir>
+		<jboss-module.destdir>${jboss.base.dir}/modules</jboss-module.destdir>
 		<module.path>org/hogdev/play/${project.artifactId}/${project.version}</module.path>
 	</properties>
 
