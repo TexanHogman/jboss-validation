@@ -1,0 +1,1 @@
+Simple POJO that does very little but simulates a transitive dependency that must be pulled in when deployed as a module. 

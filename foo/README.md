@@ -1,1 +1,1 @@
-AuthServiceMock simulates a third party dependency that exposes a service via SPI 
+Simple POJO that does very little but simulates a first level dependency that has a dependency on a POJO from another module. 
