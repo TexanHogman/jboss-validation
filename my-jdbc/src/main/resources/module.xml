@@ -1,0 +1,13 @@
+<module xmlns="urn:jboss:module:1.1" name="org.hogdev.play.${project.artifactId}" slot="${project.version}">
+	<resources>
+		<resource-root path="${project.build.finalName}.jar" />
+	</resources>
+	<dependencies>
+		<module name="org.hogdev.play.foo" slot="0.1-SNAPSHOT" />
+		<module name="javax.annotation.api" />
+		<module name="javax.inject.api" />
+		<module name="javax.api"/>
+	</dependencies>
+</module>
+
+ 
