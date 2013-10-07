@@ -2,6 +2,7 @@ package servlets;
 
 import java.io.IOException;
 import java.sql.Connection;
+import java.sql.SQLException;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
@@ -36,7 +37,7 @@ public class TesterServlet extends HttpServlet
 		try
 		{
 			InitialContext ic = new InitialContext();  // JNDI initial context
-		    dataSource = (DataSource) ic.lookup("java:jboss/datasources/MyDS"); // JNDI lookup			
+		    dataSource = (DataSource) ic.lookup("java:jboss/datasources/MyDS-55"); // JNDI lookup			
 		}
 		catch (Exception e)
 		{
@@ -62,11 +63,24 @@ public class TesterServlet extends HttpServlet
 		try
 		{
 			conn = dataSource.getConnection();
-			System.out.println("RQ: " + conn.isReadOnly());
+			System.out.println("RO [" + conn.hashCode() + "]: " + conn.isReadOnly());
+			
 		}
 		catch (Exception e)
 		{
 			e.printStackTrace();
+		}
+		finally
+		{
+			try
+			{
+				conn.close();
+			}
+			catch (SQLException e)
+			{
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		
 		response.setCharacterEncoding("UTF-8");
