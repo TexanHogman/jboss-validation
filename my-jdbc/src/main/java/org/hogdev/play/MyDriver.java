@@ -7,6 +7,7 @@ import java.sql.Clob;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.Driver;
+import java.sql.DriverManager;
 import java.sql.DriverPropertyInfo;
 import java.sql.NClob;
 import java.sql.PreparedStatement;
@@ -25,11 +26,39 @@ import java.util.logging.Logger;
 
 public class MyDriver implements Driver
 {
+    private static final Driver INSTANCE = new MyDriver();
+    private static volatile boolean registered;
+
+    static 
+    {
+    	System.out.println("static!!!!");
+        load();
+        
+    }
+    
 
 	public MyDriver()
 	{
 		System.out.println("!!!!!!!!!!!!!!Driver!!!!!!!!!!!!!!!!!!!");
 	}
+	
+	public static synchronized Driver load()
+    {
+        try
+        {
+            if(!registered)
+            {
+                registered = true;
+                DriverManager.registerDriver(INSTANCE);
+            }
+        }
+        catch(SQLException sqlexception)
+        {
+        	sqlexception.printStackTrace();
+        }
+        return INSTANCE;
+    }
+	
 
 	@Override
 	public Connection connect(String url, Properties info) throws SQLException
@@ -459,4 +488,6 @@ public class MyDriver implements Driver
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	
 }
