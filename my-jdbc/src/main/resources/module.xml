@@ -6,7 +6,10 @@
 		<module name="org.hogdev.play.foo" slot="0.1-SNAPSHOT" />
 		<module name="javax.annotation.api" />
 		<module name="javax.inject.api" />
+		
 		<module name="javax.api"/>
+        <module name="javax.transaction.api"/>
+        <module name="javax.servlet.api" optional="true"/>
 	</dependencies>
 </module>
 
