@@ -5,8 +5,6 @@
 		<resource-root path="${project.build.finalName}.jar" />
 	</resources>
 	<dependencies>
-		<module name="javax.annotation.api" />
-		<module name="javax.inject.api" />
 	</dependencies>
 </module>
 
