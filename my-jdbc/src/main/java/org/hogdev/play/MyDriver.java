@@ -36,7 +36,7 @@ public class MyDriver implements Driver
 				conn = (Connection) bm.getReference(bean, MyConnection.class, ctx);
 			}
 			else
-				throw new SQLException("count not find CDI bean for Connection");
+				throw new SQLException("could not find CDI bean for Connection");
 		}
 		catch (Exception e)
 		{

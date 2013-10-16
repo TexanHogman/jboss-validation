@@ -6,7 +6,7 @@ public class Bar
 {
 	public String bars()
 	{
-		return "bar was here";
+		return "bar was here new and improved";
 	}
 	
 	@PostConstruct
