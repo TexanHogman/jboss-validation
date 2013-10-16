@@ -3,7 +3,6 @@
         <dependencies>
             <module name="org.hogdev.play.foo" slot="1.0" meta-inf="import" />
             <module name="org.hogdev.play.bar" slot="1.0" meta-inf="import" />
-            <module name="org.hogdev.play.my-jdbc" slot="1.0" meta-inf="import" />
         </dependencies>
     </deployment>
 </jboss-deployment-structure>

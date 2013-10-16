@@ -10,7 +10,6 @@
 	<modules>
 		<module>foo</module>
 		<module>bar</module>
-		<module>my-jdbc</module>
 		<module>module-test</module>
 	</modules>
 
