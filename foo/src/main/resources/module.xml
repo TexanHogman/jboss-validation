@@ -3,7 +3,15 @@
 		<resource-root path="${project.build.finalName}.jar" />
 	</resources>
 	<dependencies>
-		<module name="org.hogdev.play.bar" slot="1.1.0" />
+		<module name="org.hogdev.play.bar" slot="1.1.0" export="true">
+		<exports>
+            <include-set>
+                <path name="META-INF"/>
+                <path name="META-INF/"/>
+                <path name="META-INF/beans.xml"/>
+            </include-set>
+        </exports>
+		</module>
 		<module name="javax.annotation.api" />
 		<module name="javax.inject.api" />
 	</dependencies>
