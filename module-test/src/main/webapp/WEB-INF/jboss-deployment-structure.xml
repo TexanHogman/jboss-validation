@@ -1,5 +1,4 @@
 <jboss-deployment-structure>
-<<<<<<< HEAD
 	<deployment>
 		<dependencies>
 			<module name="org.hogdev.play.foo" slot="1.1.0">
