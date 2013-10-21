@@ -1,8 +1,14 @@
 <jboss-deployment-structure>
-    <deployment>
-        <dependencies>
-            <module name="org.hogdev.play.foo" slot="1.1.0" meta-inf="import" />
-            <module name="org.hogdev.play.bar" slot="1.1.0" meta-inf="import" />
-        </dependencies>
-    </deployment>
+	<deployment>
+		<dependencies>
+			<module name="org.hogdev.play.foo" slot="1.1.0">
+				<imports>
+					<include-set>
+						<path name="META-INF" />
+					</include-set>
+				</imports>
+			</module>
+
+		</dependencies>
+	</deployment>
 </jboss-deployment-structure>
