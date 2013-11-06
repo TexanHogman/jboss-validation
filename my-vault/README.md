@@ -1,0 +1,1 @@
+An example custom jboss vault to integrate with our properitery keystore
