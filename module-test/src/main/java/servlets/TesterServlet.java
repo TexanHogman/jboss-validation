@@ -1,8 +1,6 @@
 package servlets;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.SQLException;
 
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
