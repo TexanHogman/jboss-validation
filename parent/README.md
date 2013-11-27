@@ -1,1 +1,0 @@
-This is the parent pom that encapsulates all the steps required for build and packaging of Icarus components and applications
