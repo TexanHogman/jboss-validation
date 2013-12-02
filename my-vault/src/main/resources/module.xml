@@ -1,4 +1,4 @@
-<module xmlns="urn:jboss:module:1.1" name="org.hogdev.play.${project.artifactId}" slot="${project.version}">
+<module xmlns="urn:jboss:module:1.1" name="${project.groupId}.${project.artifactId}" slot="${project.version}">
 	<resources>
 		<resource-root path="${project.build.finalName}.jar" />
 	</resources>
