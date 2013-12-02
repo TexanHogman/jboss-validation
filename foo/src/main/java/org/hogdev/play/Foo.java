@@ -11,7 +11,7 @@ public class Foo
 	
 	public String foos()
 	{
-		return "foo was here new and improved but was bar, let's see: " + bar.bars();
+		return "foo-dawg-daddy was here new and improved but was bar, let's see: " + bar.bars();
 	}
 
 	@PostConstruct
